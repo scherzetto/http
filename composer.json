@@ -1,0 +1,28 @@
+{
+    "name": "scherzetto/http",
+    "description": "Simple HTTP helper classes",
+    "type": "library",
+    "require-dev": {
+        "codacy/coverage": "^1.4",
+        "phpunit/phpunit": "^7.0",
+        "phpstan/phpstan": "^0.9.2",
+        "phpstan/phpstan-phpunit": "^0.9.4",
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "sensiolabs/security-checker": "^5.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Zaslavsky",
+            "email": "benjamin.zaslavsky@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/psr7": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {"Scherzetto\\Http\\": "Scherzetto/Http"},
+        "exclude-from-classmap": ["/Test/"]
+    }
+}
